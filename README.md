@@ -1,6 +1,6 @@
 ## CI
 
-[![Playwright Tests](https://github.com/ТВОЙ_ЛОГИН/sis2-playwright-ci/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/ТВОЙ_ЛОГИН/sis2-playwright-ci/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/amalbekd/sis2-playwright-ci/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/amalbekd/sis2-playwright-ci/actions/workflows/playwright.yml)
 
 **CI system:** GitHub Actions. It is built into GitHub, where the repository already lives, needs no server of its own, is free for public repositories and supports matrices for sharding.
 
