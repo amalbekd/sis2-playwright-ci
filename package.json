@@ -1,0 +1,16 @@
+{
+  "name": "sis2-playwright-ci",
+  "version": "1.0.0",
+  "description": "[![Playwright Tests](https://github.com/<owner>/<repo>/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/<owner>/<repo>/actions/workflows/playwright.yml)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}
