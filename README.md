@@ -1,6 +1,8 @@
+
+
 ## CI
 
-[![Playwright Tests](https://github.com/ТВОЙ_ЛОГИН/sis2-playwright-ci/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/ТВОЙ_ЛОГИН/sis2-playwright-ci/actions/workflows/playwright.yml)
+[![Playwright Tests](https://github.com/amalbekd/sis2-playwright-ci/actions/workflows/playwright.yml/badge.svg?branch=main)](https://github.com/amalbekd/sis2-playwright-ci/actions/workflows/playwright.yml)
 
 **CI system:** GitHub Actions. It is built into GitHub, where the repository already lives, needs no server of its own, is free for public repositories and supports matrices for sharding.
 
@@ -17,10 +19,10 @@
 
 | Configuration | Total run time | Run tests step (slowest shard) | Run |
 | --- | --- | --- | --- |
-| 1 job, no sharding | X min Y s | X min Y s | [run](LINK) |
-| 4 shards + merge | X min Y s | X min Y s | [run](LINK) |
+| 1 job, no sharding | 1m 3s | 6s | [run](https://github.com/amalbekd/sis2-playwright-ci/actions/runs/45039002609) |
+| 4 shards + merge | 50s | 3s | [run](https://github.com/amalbekd/sis2-playwright-ci/actions/runs/45039330113) |
 
-Median of 3 runs via workflow_dispatch. Conclusion: <ONE SENTENCE: e.g. sharding cut the test step from X to Y, but each shard spends ~1 min on setup (checkout, npm ci, browser install), so total time dropped less than 4x.>
+Median of runs via workflow_dispatch / PR runs. Conclusion: For a small test suite of 8 fast checks, running 4 shards in parallel reduces both the test step time and median total workflow duration slightly while adding parallel shard and report-merge overhead.
 
 ### Running locally
 
